@@ -40,7 +40,7 @@ void setup() {
   audio.CSPin = SD_CSPin;
 }
 void loop() {
-  Serial.println("####################################################################################");
+  Serial.println("######################################################################################");
   char fileSlNum[20] = "";
   itoa(file_number, fileSlNum, 10);
   char file_name[50] = "";
@@ -57,5 +57,5 @@ void loop() {
   audio.stopRecording(file_name);
   Serial.println("stopRecording");
   file_number++;
-  Serial.println("####################################################################################");
+  Serial.println("########################################################################################");
 }
